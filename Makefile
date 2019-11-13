@@ -7,7 +7,7 @@ SERVICES = letsencrypt https://github.com/mekanix/jail-letsencrypt \
 
 post_setup:
 .for service url in ${SERVICES}
-	@echo "FQDN ?= ${FQDN}" >>services/${service}/vars.mk
+	@echo "FQDN ?= ${FQDN}" >>services/${service}/project.mk
 .endfor
 	@cat templates/fstab.nginx.local ${NGINX_FSTAB} | sort | uniq >${NGINX_FSTAB}
 
