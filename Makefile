@@ -1,9 +1,7 @@
 REGGAE_PATH = /usr/local/share/reggae
+USE = letsencrypt mysql nginx
 NGINX_FSTAB = services/nginx/templates/fstab
-SERVICES = letsencrypt https://github.com/mekanix/jail-letsencrypt \
-	   mysql https://github.com/mekanix/jail-mysql \
-	   wordpress https://github.com/mekanix/jail-wordpress \
-	   nginx https://github.com/mekanix/jail-nginx
+SERVICES = wordpress https://github.com/mekanix/jail-wordpress
 
 post_setup:
 .for service url in ${SERVICES}

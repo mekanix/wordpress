@@ -1,2 +1,2 @@
 /usr/cbsd/jails-data/wordpress-data/usr/local/www/wordpress /usr/local/www/wordpress nullfs ro 0 0
-/usr/cbsd/jails-data/letsencrypt-data/usr/local/etc/dehydrated/certs /usr/local/etc/nginx/certs nullfs ro 0 0
+/usr/cbsd/jails-data/letsencrypt-data/usr/local/etc/dehydrated/certs /etc/certs nullfs ro 0 0
